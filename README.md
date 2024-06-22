@@ -1,31 +1,52 @@
-# npm-lib-template
+# is-css-request
 
-[![codecov](https://codecov.io/gh/sonofmagic/npm-lib-template/branch/main/graph/badge.svg?token=zn05qXYznt)](https://codecov.io/gh/sonofmagic/npm-lib-template)
+Utils for Checking if a path or url points to a CSS request.
 
-[icebreaker](https://github.com/sonofmagic) 编写的一个 `npm` 包的一个模板
+## Installation
 
-- 使用 `tsup` 打包 , `rollup` 打包版本在 [rollup](https://github.com/sonofmagic/npm-lib-template/tree/rollup) 分支 (兼容 `tsc`)
-- 使用 `vitest` 作为单元测试框架
-- 使用 `eslint` 来规范代码风格
-- 输出 `dist` -> `cjs`,`esm` and `.d.ts`
-- 使用 `semantic-release` 来发布 `npm`/`github`
+```bash
+npm install --save is-css-request
+```
 
-## 为什么使用 `vitest` 而不是原先的 `jest`
+## Usage
 
-`vitest` 开箱即用, `jest` 在同时遇到 `cjs` 和 `esm` 依赖的时候，支持差，而且配置复杂，依赖的 `preset` 多，比如 `ts-jest`..
+### API
 
-## scripts
+```js
+// esm
+import { isCSSRequest, isModuleCSSRequest } from 'is-css-request'
+// or cjs
+// const { isCSSRequest, isModuleCSSRequest } = require('is-css-request')
 
-### rename
+isCSSRequest('http://foo.bar/css-file.css') // => true
+isCSSRequest('some/path/to/a/css-file.css') // => true
+isCSSRequest('ice/a/preprocessor.scss') // => true
+isCSSRequest('ice/a/x.fac') // => false
 
-执行 `npm run init:rename`
+isModuleCSSRequest('some/path/to/a/css-file.css') // => false
+isModuleCSSRequest('some/path/to/a/css-file.module.css') // => true
+```
 
-作用为替换 `package.json` 中默认包含的所有名称为 `npm-lib-template` 的字段
+### Enum
 
-默认替换为新建代码仓库的文件夹名称！
+```ts
+import { PostCssDialectLang, PreprocessLang, PureCssLang } from 'is-css-request'
 
-### bin
+PureCssLang.css
+PreprocessLang.less
+PreprocessLang.sass
+PreprocessLang.scss
+PostCssDialectLang.sss
+```
 
-执行 `npm run init:bin`
+## License
 
-作用为 `package.json` 添加 `files` 和 `bin`，同时生成 `bin/{{pkg.name}}.js` 和 `src/cli.ts` 文件
+[MIT](./LICENSE)
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
