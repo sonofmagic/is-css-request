@@ -2,7 +2,7 @@
   "name": "is-css-request",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "description": "Utils for Checking if a path or url points to a CSS request.",
   "author": "SonOfMagic <qq1324318532@gmail.com>",
   "license": "MIT",
