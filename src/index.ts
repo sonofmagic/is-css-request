@@ -37,3 +37,9 @@ export function isDirectCSSRequest(request: string): boolean {
 export function isDirectRequest(request: string): boolean {
   return directRequestRE.test(request)
 }
+
+export {
+  CSS_LANGS_RE,
+  cssModuleRE,
+  directRequestRE,
+}

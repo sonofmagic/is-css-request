@@ -2,8 +2,8 @@
   "name": "is-css-request",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.3.0",
-  "description": "Utils for Checking if a path or url points to a CSS request.",
+  "packageManager": "pnpm@9.4.0",
+  "description": "Utils for checking if a path or url points to a CSS request.",
   "author": "SonOfMagic <qq1324318532@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/sonofmagic/is-css-request#readme",
@@ -15,10 +15,13 @@
     "url": "https://github.com/sonofmagic/is-css-request/issues"
   },
   "keywords": [
-    "npm",
-    "lib",
-    "ts",
-    "template"
+    "css",
+    "request",
+    "is-css",
+    "vite",
+    "rollup",
+    "webpack",
+    "esbuild"
   ],
   "exports": {
     "./package.json": "./package.json",

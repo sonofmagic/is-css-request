@@ -1,11 +1,15 @@
 # is-css-request
 
-Utils for Checking if a path or url points to a CSS request.
+Utils for checking if a path or url points to a CSS request.
 
 ## Installation
 
 ```bash
-npm install --save is-css-request
+npm i is-css-request
+
+yarn add is-css-request
+
+pnpm add is-css-request
 ```
 
 ## Usage
@@ -13,7 +17,7 @@ npm install --save is-css-request
 ### API
 
 ```js
-// esm
+// esm + ts
 import { isCSSRequest, isModuleCSSRequest } from 'is-css-request'
 // or cjs
 // const { isCSSRequest, isModuleCSSRequest } = require('is-css-request')
@@ -46,7 +50,7 @@ PostCssDialectLang.sss
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
+2. Create your feature branch (`git checkout -b feature/my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+4. Push to the branch (`git push origin feature/my-new-feature`)
 5. Create new Pull Request
