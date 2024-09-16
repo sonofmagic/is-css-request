@@ -63,27 +63,27 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@icebreakers/eslint-config": "^0.3.9",
+    "@icebreakers/eslint-config": "^0.5.0",
     "@tsconfig/recommended": "^1.0.6",
     "@types/fs-extra": "^11.0.4",
     "@types/klaw": "^3.0.6",
     "@types/lodash": "^4.17.5",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^20.14.8",
-    "@vitest/coverage-v8": "^2.0.0",
+    "@types/node": "^22.5.5",
+    "@vitest/coverage-v8": "^2.1.1",
     "cross-env": "^7.0.3",
     "defu": "^6.1.4",
     "del": "^7.1.0",
-    "eslint": "9.9.0",
+    "eslint": "9.10.0",
     "fs-extra": "^11.2.0",
     "klaw": "^4.1.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "pathe": "^1.1.2",
-    "semantic-release": "^24.0.0",
-    "tsup": "^8.1.0",
-    "tsx": "^4.15.7",
-    "typescript": "^5.5.2",
-    "vitest": "^2.0.0"
+    "semantic-release": "^24.1.1",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
   }
 }
